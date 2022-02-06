@@ -12,6 +12,9 @@ body {
   font-family: 'Roboto',sans-serif;
   background: #141218;
   color: #fff;
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top right 20%;
 }
 
 img {
@@ -644,7 +647,7 @@ template {
   .container {
     max-width: 92%;
   }
-  .main-info-play {
+  .main-play {
     display: none;
   }
 }
@@ -666,6 +669,21 @@ template {
     display: -ms-flexbox;
     display: flex;
     visibility: visible;
+  }
+  .main-info__button {
+    margin-bottom: 40px;
+  }
+  .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .slide-remove {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
