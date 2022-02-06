@@ -172,6 +172,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 100px;
 }
 
 .main-info__video__card {
@@ -249,6 +250,39 @@ img {
   opacity: 50%;
   left: -16px;
   top: -16px;
+}
+
+.footer {
+  background-color: #141218;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  opacity: 20%;
+}
+
+.footer-info__signature {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-info__nav__item {
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 25px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -609,6 +643,9 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 92%;
+  }
+  .main-info-play {
+    display: none;
   }
 }
 
