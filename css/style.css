@@ -95,6 +95,15 @@ img {
   background-color: #fff;
 }
 
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main-info {
   max-width: 500px;
 }
@@ -157,7 +166,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 30px;
 }
 
 .main-info__video {
@@ -167,9 +175,13 @@ img {
 }
 
 .main-info__video__card {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   width: 164px;
   height: 113px;
-  background-color: red;
   border-radius: 8px;
   padding: 13px;
 }
@@ -179,9 +191,13 @@ img {
   background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url(image.png);
   border-radius: 8px;
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .main-info__video__card-text {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +208,7 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
+  z-index: 1;
 }
 
 .main-info__video__card-text__number {
@@ -205,6 +221,34 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+}
+
+.main-play {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9D2929;
+  border: none;
+  margin: auto;
+}
+
+.main-play__icon {
+  position: relative;
+  -webkit-transform: translatex(5px);
+          transform: translatex(5px);
+}
+
+.main-play:before {
+  content: '';
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: #9D2929;
+  position: absolute;
+  opacity: 50%;
+  left: -16px;
+  top: -16px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
